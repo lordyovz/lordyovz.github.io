@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <style>
+        .Container {
+            text-align: center;
+        }
+
+        .Container:before {
+            content: '';
+            height: 40%;
+            display: inline-block;
+        }
+
+        .centeredContent {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
+    <title>litsearch</title>
+</head>
+<body>
+    <!--A simple web page that makes Google searches.-->
+    <form role="search" method="get" id="searchform" class="searchform" action="http://www.google.com/search?hl=en-GB&source=hp&q=">
+        <div class="Container" id="lel">
+            <div class="input-field">
+                <input placeholder="Type here." type="text" value="" name="q" id="s"> 
+                <button type="submit" class="btn-flat" style="color:#bdbdbd">Search</button>
+            </div>
+        </div>
+    </form>
+</body>
