@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="pure.css">
     <style>
         .Container {
             text-align: center;
@@ -7,24 +7,32 @@
 
         .Container:before {
             content: '';
-            height: 40%;
+            height: 15%;
             display: inline-block;
         }
 
         .centeredContent {
-            display: inline-block;
             vertical-align: middle;
+            text-align: center;
         }
+
+        .button-lel {
+            background:powderblue;
+        }
+
     </style>
     <title>litsearch</title>
 </head>
 <body>
     <!--A simple web page that makes Google searches.-->
-    <form role="search" method="get" id="searchform" class="searchform col" action="http://www.google.com/search?hl=en-GB&source=hp&q=">
+    <form role="search" method="get" id="searchform" class="searchform pure-form" action="http://www.google.com/search?hl=en-GB&source=hp&q=">
         <div class="Container" id="lel">
-            <div class="input-field">
-                <input placeholder="..." style="color:black" type="text" value="" name="q" id="s"> 
-                <button type="submit" style="color:black" class="btn-floating btn-flat">&#10141;</button>
+            <div>
+                <img src="lit.png">
+            </div>
+            <div>
+                <input class="pure-input-2-3" placeholder="..." type="text" value="" name="q" id="s">
+                <button type="submit" class="pure-button button-lel">&#10141;</button>
             </div>
         </div>
     </form>
